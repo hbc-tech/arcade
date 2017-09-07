@@ -1,0 +1,31 @@
+{
+  "name": "arcade",
+  "version": "0.0.1",
+  "description": "The foundation for the HBC common app framework",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepublishOnly": "tooling/nope"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "repository": "hbc-tech/arcade",
+  "maintainers": [
+    {
+      "name": "Andrew Powell",
+      "email": "andrew@shellscape.org",
+      "url": "shellscape.org"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "chalk": "^2.1.0",
+    "eslint": "^4.6.1",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}

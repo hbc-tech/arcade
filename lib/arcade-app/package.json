@@ -1,0 +1,31 @@
+{
+  "name": "arcade-app",
+  "version": "0.0.1",
+  "description": "The entry point for and HBC common framework app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js lib/*.js",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "repository": "hbc-tech/arcade",
+  "maintainers": [
+    {
+      "name": "Andrew Powell",
+      "email": "powella@gilt.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "deep-assign": "^2.0.0",
+    "koa": "^2.3.0",
+    "koa-logger": "^3.0.1",
+    "koa-rewrite": "^2.1.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
+    "marko": "^4.4.28"
+  },
+  "devDependencies": {}
+}
