@@ -1,4 +1,4 @@
-# arcade
+# arcade [![Build Status](https://travis-ci.org/hbc-tech/arcade.svg?branch=master)](https://travis-ci.org/hbc-tech/arcade)
 
 Arcade is the foundation for the HBC common app framework
 
