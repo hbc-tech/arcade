@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "prepublishOnly": "tooling/nope"
+    "prepublishOnly": "tooling/nope",
+    "test": "npm run lint"
   },
   "engines": {
     "node": ">= 8"
