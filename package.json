@@ -4,9 +4,11 @@
   "description": "The foundation for the HBC common app framework",
   "main": "index.js",
   "scripts": {
+    "install:app": "cd lib/arcade-app && npm install",
+    "install:modules": "npm run install:app",
     "lint": "eslint .",
     "prepublishOnly": "tooling/nope",
-    "test": "npm run lint"
+    "test": "npm run install:modules && npm run lint"
   },
   "engines": {
     "node": ">= 8"
