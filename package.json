@@ -2,10 +2,15 @@
   "name": "arcade",
   "version": "0.0.1",
   "description": "The foundation for the HBC common app framework",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "install:app": "cd lib/arcade-app && npm install",
-    "install:modules": "npm run install:app",
+    "install:app": "cd src/arcade-app && npm install && cd ../..",
+    "install:header": "cd src/arcade-header && npm install && cd ../..",
+    "install:modules": "npm run install:app && npm run install:header",
+    "link": "npm run link:app && npm run link:header",
+    "link:app": "cd src/arcade-app && npm link && cd ../..",
+    "link:header": "cd src/arcade-header && npm link && cd ../..",
     "lint": "eslint .",
     "prepublishOnly": "tooling/nope",
     "test": "npm run install:modules && npm run lint"
@@ -23,6 +28,8 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@hbc-tech/arcade-app": "file:src/arcade-app",
+    "@hbc-tech/arcade-header": "file:src/arcade-header"
   },
   "devDependencies": {
     "ava": "^0.22.0",

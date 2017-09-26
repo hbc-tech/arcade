@@ -11,9 +11,14 @@
  *
  * { name: <String>, data: <Any> }
  */
+
+const chalk = require('chalk');
+
 module.exports = function sockets() {
   const WebSocket = require('ws');
   const wss = new WebSocket.Server({ port: this.options.wssPort });
+
+  this.log.info(chalk`{green ☉}  ws listening on port {green ${this.options.wssPort}}`);
 
   wss.on('connection', (ws) => {
     ws.on('message', (message) => {

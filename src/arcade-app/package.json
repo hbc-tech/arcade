@@ -1,5 +1,5 @@
 {
-  "name": "arcade-app",
+  "name": "@hbc-tech/arcade-app",
   "version": "0.0.1",
   "description": "The entry point for and HBC common framework app",
   "main": "index.js",
@@ -20,13 +20,13 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
-    "deep-assign": "^2.0.0",
     "execa": "^0.8.0",
     "koa": "^2.3.0",
     "koa-logger": "^3.0.1",
     "koa-rewrite": "^2.1.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
+    "lodash.merge": "^4.6.0",
     "log-symbols": "^2.0.0",
     "loglevel": "^1.4.1",
     "loglevel-plugin-prefix": "^0.5.3",
