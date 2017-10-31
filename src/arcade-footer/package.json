@@ -1,0 +1,31 @@
+{
+  "name": "@hbc-tech/arcade-footer",
+  "version": "0.0.1",
+  "description": "The shared footer module for arcade",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js lib/*.js",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "repository": "hbc-tech/arcade",
+  "maintainers": [
+    {
+      "name": "Andrew Powell",
+      "email": "powella@gilt.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash.merge": "^4.6.0",
+    "marko": "^4.4.28",
+    "request": "^2.82.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {},
+  "peerDepedencies": {
+    "@hbc-tech/arcade-app": "*"
+  }
+}

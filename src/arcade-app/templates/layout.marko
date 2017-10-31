@@ -2,12 +2,24 @@
 <html>
 <head>
   <title>${input.title}</title>
+  <for(link in input.head.links)>
+    <link rel="${link.rel}" href="${link.href}" />
+  </for>
+  <for(script in input.scripts.head)>
+    <script id=script.id type=script.type src="${script.src}"></script>
+  </for>
 </head>
 <body>
+  <for(script in input.scripts.body.start)>
+    <script id=script.id type=script.type src="${script.src}"></script>
+  </for>
   $!{input.header}
   <main>
     $!{input.main}
   </main>
   $!{input.footer}
+  <for(script in input.scripts.body.end)>
+    <script id=script.id type=script.type src="${script.src}"></script>
+  </for>
 </body>
 </html>

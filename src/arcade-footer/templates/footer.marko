@@ -1,0 +1,106 @@
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <section class="contact-info">
+      <h1 class="contact-info__heading">${input.contactInfo.heading}</h1>
+      <ul class="contact-info__links">
+      <for(link in input.contactInfo.links | status-var=loop)>
+        <li class="contact-info__link" key="${loop.getIndex()+1}">
+          <a class="contact-info__anchor"
+            href="${link.href}"
+            target="${link.target}"
+            data-mobilelabel="${link.text.mobile}"
+          >
+            <span class="contact-info__label">${link.text.desktop}</span>
+          </a>
+        </li>
+      </for>
+      </ul>
+    </section>
+  </div>
+
+  <div class="container">
+    <section class="site-map">
+      <for(section in input.siteMap | status-var=loop)>
+      <article class="site-map__section" key="${loop.getIndex()+1}" > <!-- it's up to the mounting component to attach a click handler -->
+        <h3 class="site-map__section-title">${section.heading}</h3>
+        <span class="hbc-icon hbc-icon--plus" aria-hidden="true" /> <!-- it's up to the mounting component to attach a click handler -->
+        <ul class="site-map__links">
+        <for(link in section.links | status-var=loop)>
+          <li class="site-map__link" key="${loop.getIndex()+1}">
+            <a class="site-map__anchor" href="${link.href}" target="${link.target}">
+              ${link.text}
+            </a>
+          </li>
+        </for>
+        </ul>
+      </article>
+    </for>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="container">
+      <section class="external-links">
+        <ul class="external-links__social-links">
+        <for(link in input.externalLinks.networks | status-var=loop)>
+          <li class="external-links__list-item" key="${loop.getIndex()+1}">
+          <if(false)> <!-- show if mobile -->
+            <a class="external-links__link external-links__link--text" href="${link.href}">
+              ${link.text}
+            </a>
+          </if>
+          <else>
+            <a class="hbc-button external-links__link external-links__link--icon hbc-button--primary"
+               href="${link.href}"
+               target="_blank"
+               role="button"
+               title="${link.text}"
+            >
+              <span>
+                <span class="hbc-icon hbc-icon--${link.icon}" aria-hidden="true" />
+                <span class="hbc-button__text is-visually-hidden">${link.text}</span>
+              </span>
+            </a> <!-- it's up to the mounting component to attach a click handler -->
+          </else>
+          </li>
+        </for>
+        </ul>
+
+        <ul class="external-links__hbc-links">
+        <if(false)> <!-- show if mobile -->
+          <li class="external-links__list-item">
+            <a class="external-links__link" href="${input.externalLinks.fullSite.href}">
+              ${input.externalLinks.fullSite.text}
+            </a>
+          </li>
+        </if>
+        <for(link in input.externalLinks.others | status-var=loop)>
+          <li class="external-links__list-item" key="${loop.getIndex()+1}">
+            <a
+              class="external-links__link"
+              href="${link.href}"
+            >
+              ${link.text}
+            </a>
+          </li>
+        </for>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="copyright">
+      <ul class="copyright__items">
+        <li class="copyright__item">${input.copyright.text}</li>
+        <for(link in input.copyright.links | status-var=loop)>
+        <li class="copyright__item" key="${loop.getIndex()+1}">
+          <a class="copyright__link" href="${link.href}" target="${link.target}">
+            ${link.text}
+          </a>
+        </li>
+        </for>
+      </ul>
+    </section>
+  </div>
+</footer>

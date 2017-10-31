@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "install:app": "cd src/arcade-app && npm install && cd ../..",
+    "install:footer": "cd src/arcade-footer && npm install && cd ../..",
     "install:header": "cd src/arcade-header && npm install && cd ../..",
-    "install:modules": "npm run install:app && npm run install:header",
+    "install:modules": "npm run install:app && npm run install:footer && npm run install:header",
     "link": "npm run link:app && npm run link:header",
     "link:app": "cd src/arcade-app && npm link && cd ../..",
     "link:header": "cd src/arcade-header && npm link && cd ../..",

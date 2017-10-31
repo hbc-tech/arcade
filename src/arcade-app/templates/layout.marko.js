@@ -4,6 +4,9 @@
 var marko_template = module.exports = require("marko/src/html").t(__filename),
     marko_helpers = require("marko/src/runtime/html/helpers"),
     marko_escapeXml = marko_helpers.x,
+    marko_forEach = marko_helpers.f,
+    marko_escapeXmlAttr = marko_helpers.xa,
+    marko_attr = marko_helpers.a,
     marko_loadTag = marko_helpers.t,
     component_globals_tag = marko_loadTag(require("marko/src/components/taglib/component-globals-tag")),
     marko_str = marko_helpers.s,
@@ -15,15 +18,52 @@ function render(input, out) {
 
   out.w("<!doctype><html><head><title>" +
     marko_escapeXml(input.title) +
-    "</title></head><body>");
+    "</title>");
+
+  marko_forEach(input.head.links, function(link) {
+    out.w("<link rel=\"" +
+      marko_escapeXmlAttr(link.rel) +
+      "\" href=\"" +
+      marko_escapeXmlAttr(link.href) +
+      "\">");
+  });
+
+  marko_forEach(input.scripts.head, function(script) {
+    out.w("<script" +
+      marko_attr("id", script.id) +
+      marko_attr("type", script.type) +
+      " src=\"" +
+      marko_escapeXmlAttr(script.src) +
+      "\"></script>");
+  });
+
+  out.w("</head><body>");
 
   component_globals_tag({}, out);
+
+  marko_forEach(input.scripts.body.start, function(script) {
+    out.w("<script" +
+      marko_attr("id", script.id) +
+      marko_attr("type", script.type) +
+      " src=\"" +
+      marko_escapeXmlAttr(script.src) +
+      "\"></script>");
+  });
 
   out.w(marko_str(input.header) +
     "<main>" +
     marko_str(input.main) +
     "</main>" +
     marko_str(input.footer));
+
+  marko_forEach(input.scripts.body.end, function(script) {
+    out.w("<script" +
+      marko_attr("id", script.id) +
+      marko_attr("type", script.type) +
+      " src=\"" +
+      marko_escapeXmlAttr(script.src) +
+      "\"></script>");
+  });
 
   init_components_tag({}, out);
 

@@ -1,0 +1,209 @@
+{
+  "siteMap": [
+    {
+      "links": [
+        {
+          "desktop": false,
+          "mobile": true,
+          "target": "_self",
+          "href": "http://www.saksfifthavenue.com/trendcaster?bmUID=kRLqUPg",
+          "text": "The TrendCaster"
+        },
+        {
+          "desktop": true,
+          "mobile": false,
+          "target": "_blank",
+          "href": "http://www.saksfifthavenue.com/cqc/select_catalog.jsp?bmUID=kRLqUPk",
+          "text": "Catalogs"
+        }
+      ],
+      "heading": "Shop Saks"
+    },
+    {
+      "links": [
+        {
+          "desktop": true,
+          "mobile": false,
+          "target": "_self",
+          "href": "http://www.saksfifthavenue.com/About-Us",
+          "text": "About Us"
+        },
+        {
+          "desktop": true,
+          "target": "_blank",
+          "href": "http://www.careersatsaks.com/",
+          "text": "Careers"
+        }
+      ],
+      "heading": "Stores & Corporate"
+    },
+    {
+      "links": [
+        {
+          "desktop": true,
+          "mobile": false,
+          "target": "_blank",
+          "href": "http://www.saksfifthavenue.com/Shipping-Returns-Taxes",
+          "text": "Domestic"
+        },
+        {
+          "desktop": true,
+          "target": "_self",
+          "href": "http://www.saksfifthavenue.com/International",
+          "text": "International"
+        }
+      ],
+      "heading": "Shipping & Returns"
+    },
+    {
+      "links": [
+        {
+          "desktop": true,
+          "mobile": false,
+          "target": "_blank",
+          "href": "http://www.saksfifthavenue.com/SaksFirst",
+          "text": "SaksFirst"
+        },
+        {
+          "desktop": true,
+          "target": "_self",
+          "href": "https://www.esnapw.com/rses/ESnapServlet?MerchantNumberSent=00979",
+          "text": "Apply"
+        }
+      ],
+      "heading": "SaksFirst Card"
+    }
+  ],
+
+  "contactInfo": {
+    "heading": "We're here to help",
+    "links": [
+      {
+        "desktop": true,
+        "mobile": false,
+        "target": "newTab",
+        "href": "http://www.saksfifthavenue.com/Customer-Service",
+        "text": {
+          "desktop": "Customer Service",
+          "mobile": "Customer Service"
+        }
+      },
+      {
+        "desktop": true,
+        "mobile": true,
+        "target": "_self",
+        "href": "tel:18775517257",
+        "text": {
+          "desktop": "1.877.551.7257",
+          "mobile": "Call"
+        }
+      },
+      {
+        "desktop": true,
+        "mobile": true,
+        "target": "_self",
+        "href": "https://www.saksfifthavenue.com/html/email_popup/email_collect_popup_main.jsp?bmForm=email_updates_form_one1&bmFormID=kRL2pDM&bmUID=kRL2pDN&bmIsForm=true&bmPrevTemplate=%2Fmain%2Fcollection.jsp&bmText=EmailUpdateString&EmailUpdateString=hello&bmHidden=prp13&prp13=b5&bmHidden=v46&v46=go&email_updates_form_one_save=#",
+        "text": {
+          "desktop": "Email",
+          "mobile": "Email"
+        }
+      },
+      {
+        "desktop": true,
+        "mobile": false,
+        "target": "_self",
+        "href": "http://saks.com",
+        "text": {
+          "desktop": "Chat",
+          "mobile": "Chat"
+        }
+      }
+    ]
+  },
+
+  "externalLinks": {
+    "fullSite": {
+      "text": "View Full Site",
+      "href": "/?website=true"
+    },
+
+    "networks": [
+      {
+        "icon": "instagram",
+        "text": "Follow us on Instagram",
+        "href": "http://instagram.com/saks"
+      },
+      {
+        "icon": "facebook",
+        "text": "Follow us on Facebook",
+        "href": "http://www.facebook.com/saks"
+      },
+      {
+        "icon": "pinterest",
+        "text": "Follow us on Pinterest",
+        "href": "http://pinterest.com/saks"
+      },
+      {
+        "icon": "twitter",
+        "text": "Follow us on Twitter",
+        "href": "https://twitter.com/saks"
+      },
+      {
+        "icon": "vine",
+        "text": "Follow us on Vine",
+        "href": "https://vine.co/saks"
+      },
+      {
+        "icon": "tumblr",
+        "text": "Follow us on Tumblr",
+        "href": "http://10022-shoe.tumblr.com/"
+      },
+      {
+        "icon": "youtube",
+        "text": "Follow us on YouTube",
+        "href": "http://www.youtube.com/user/sakscom"
+      },
+      {
+        "icon": "google-plus",
+        "text": "Follow us on Google Plus",
+        "href": "https://plus.google.com/u/0/+Saks/"
+      },
+      {
+        "icon": "wanelo",
+        "text": "Follow us on Wanelo",
+        "href": "http://wanelo.com/saks"
+      },
+      {
+        "text": "Follow us on POV",
+        "href": "http://www.sakspov.com/"
+      }
+    ],
+
+    "others": [
+      {
+        "text": "Download the Saks App",
+        "href": "http://www.saksfifthavenue.com/Promo/iPad/Index.jsp"
+      },
+      {
+        "text": "Sign up for SMS",
+        "target": "_self",
+        "href": "http://www.saksfifthavenue.com/main/SMS.jsp"
+      },
+      {
+        "text": "Shop Saks.com",
+        "href": "http://www.saksfifthavenue.com/"
+      }
+    ]
+  },
+
+  "copyright": {
+    "text": "© 2017, Saks Fifth Avenue OFF 5TH",
+    "links": [
+      {
+        "text": "CA Transparency in Supply Chains Act",
+        "href": "http://yahoo.com",
+        "target": "_self"
+      }
+    ]
+  }
+}

@@ -10,6 +10,17 @@ module.exports = function middleware() {
   // create a context objext specifically for arcade data
   app.use(async (ctx, next) => {
     ctx.arcade = {
+      head: {
+        links: []
+      },
+
+      scripts: {
+        body: {
+          end: [],
+          start: []
+        }
+      },
+
       /**
        * @method render
        * @desc renders a page using the arcade app layout
